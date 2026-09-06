@@ -1,0 +1,7 @@
+{
+  "name": "clase2-03-grid",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}

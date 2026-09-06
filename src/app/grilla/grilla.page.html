@@ -1,0 +1,66 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Grilla</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <!-- 1) 12 columnas: cada fila reparte el ancho con size (suma 12) -->
+  <h2 class="titulo">1 · 12 columnas</h2>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="6">6</ion-col>
+      <ion-col size="6">6</ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="4">4</ion-col>
+      <ion-col size="4">4</ion-col>
+      <ion-col size="4">4</ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="8">8</ion-col>
+      <ion-col size="4">4</ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <!-- 2) Responsive: el ancho cambia según el tamaño de pantalla.
+       Achica/agranda la ventana para ver el reacomodo. -->
+  <h2 class="titulo">2 · Responsive (achica la ventana)</h2>
+  <p class="ayuda">Móvil: 1 por fila · Tablet (md): 2 · Desktop (lg): 4</p>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12" size-md="6" size-lg="3">A</ion-col>
+      <ion-col size="12" size-md="6" size-lg="3">B</ion-col>
+      <ion-col size="12" size-md="6" size-lg="3">C</ion-col>
+      <ion-col size="12" size-md="6" size-lg="3">D</ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <!-- 3) Offset: empuja la columna dejando espacio a su izquierda (sin columnas vacías) -->
+  <h2 class="titulo">3 · Offset (desplazamiento)</h2>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="6" offset="3">6 · offset 3</ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="4">4</ion-col>
+      <ion-col size="4" offset="4">4 · offset 4</ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <!-- 4) Alineación: justify reparte en horizontal, align en vertical -->
+  <h2 class="titulo">4 · Alineación</h2>
+  <p class="ayuda">Fila 1: justify-content-center · Fila 2: align-items-center</p>
+  <ion-grid>
+    <ion-row class="ion-justify-content-center">
+      <ion-col size="3">3</ion-col>
+      <ion-col size="3">3</ion-col>
+    </ion-row>
+    <ion-row class="ion-align-items-center fila-alta">
+      <ion-col size="4">centrada</ion-col>
+      <ion-col size="4" class="col-alta">alta</ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>

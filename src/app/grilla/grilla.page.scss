@@ -1,0 +1,33 @@
+/* Solo para VER la grilla en este ejemplo: pintamos cada columna. */
+ion-col {
+  background: var(--ion-color-primary, #3880ff);
+  color: #fff;
+  text-align: center;
+  font-weight: 600;
+  padding: 18px 0;
+  border: 2px solid #fff;
+  border-radius: 8px;
+}
+
+/* Subtítulo para separar cada sección de ejemplos. */
+.titulo {
+  margin: 20px 4px 8px;
+  font-size: 1rem;
+  color: var(--ion-color-primary, #3880ff);
+}
+
+/* Texto de ayuda gris bajo cada subtítulo. */
+.ayuda {
+  margin: 0 4px 8px;
+  font-size: 0.8rem;
+  color: var(--ion-color-medium, #92949c);
+}
+
+/* Para que se note align-items: hacemos la fila alta y una columna más alta. */
+.fila-alta {
+  min-height: 90px;
+}
+
+.col-alta {
+  padding: 40px 0;
+}
